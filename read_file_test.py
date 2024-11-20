@@ -223,14 +223,28 @@ def setting():
         
 
 def printMeny():
-    print("------------------- Telefonkatalog -------------------")
-    print("| 1. leter etter ord                                 |")
-    print("| 2. finn ord                                        |")
-    print("| 3. lett etter linjer                               |")
-    print("| 4. Tell ord                                        |")
-    print("| 5. settings                                        |")
-    print("| 6. Avslutt                                         |")
-    print("------------------------------------------------------")
+    choice_list = [
+        ("------------------- Telefonkatalog -------------------"),
+        "| 1. leter etter ord                                 |",
+        "| 2. finn ord                                        |",
+        "| 3. lett etter linjer                               |",
+        "| 4. Tell ord                                        |",
+        "| 5. settings                                        |",
+        "| 6. Avslutt                                         |",
+        "------------------------------------------------------"
+    ]
+    for line in choice_list:
+        print(line)
+    if False:
+        print("------------------- Telefonkatalog -------------------")
+        print("| 1. leter etter ord                                 |")
+        print("| 2. finn ord                                        |")
+        print("| 3. lett etter linjer                               |")
+        print("| 4. Tell ord                                        |")
+        print("| 5. settings                                        |")
+        print("| 6. Avslutt                                         |")
+        print("------------------------------------------------------") 
+
     menyvalg = input("Skriv inn tall for å velge fra menyen: ")
     utfoerMenyvalg(menyvalg)
 
