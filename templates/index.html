@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <script src="/static/javascript/index.js"></script>
 </head>
 <body>
-    <h1>hei</h1>
-    <div>
-    {% for item in choicelist %}
-    <div>
-        <li>{{ item }}</li>
-        <button>klikk</button>
-    </div>
     
-    {% endfor %}
+    <h1>hei</h1>
+    <div class ="hoveddiv">
+        {% for index, value in choicelist %}
+            <div class="en_div">
+                <li class="tags">{{ value }}</li>
+                <button onclick="sendData('Value {{ value }}')">klikk</button>
+
+            </div>
+        {% endfor %}
     </div>
-   
 </body>
 </html>

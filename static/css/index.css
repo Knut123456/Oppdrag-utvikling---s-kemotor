@@ -1,0 +1,11 @@
+.en_div {
+    padding: 10px;
+    
+    display: flex;
+  }
+
+.divs-tags {
+    gap: 10px;
+
+    margin: 10px;
+  }
