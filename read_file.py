@@ -127,7 +127,7 @@ def finnord_func(finnord):
  
 def find_line_func(find_line):
     number = 0 #to keep track of the number of find is shown
-    file_number = 0 #to keep track of the file is in
+    file_number = -1 #to keep track of the file is in
     line_number = 0 #to keep track of the line is in
     for file in list_files:
         file_number += 1
@@ -223,7 +223,7 @@ def setting():
         
 
 def printMeny():
-    print("------------------- Telefonkatalog -------------------")
+    print("------------------- Søkemotor -------------------")
     print("| 1. leter etter ord                                 |")
     print("| 2. finn ord                                        |")
     print("| 3. lett etter linjer                               |")
