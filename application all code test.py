@@ -40,7 +40,7 @@ def videre_settings():
        videre_settings()
 
 all_files =[]
-filepaths = ["tekstfiles"]
+filepath ="tekstfiles"
 def finn_alle_filer(filepath):
     if os.path.exists(filepath):
         print("file exits")  
@@ -176,9 +176,7 @@ def utfoerMenyvalg(valgtTall):
         utfoerMenyvalg(nyttForsoek) 
 
 
-all_files
 
-finn_alle_filer()
 
 flattened_choicelist = [(index, ", ".join(value)) for index, value in enumerate(printMenys)]
 #print(flattened_choicelist)
