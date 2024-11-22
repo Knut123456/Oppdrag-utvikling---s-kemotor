@@ -13,9 +13,13 @@
     <div class ="hoveddiv">
         {% for index, value in choicelist %}
             <div class="en_div">
+                {% if index  == 0 %}
                 <li class="tags">{{ value }}</li>
-                <button onclick="sendData('Value {{ value }}')">klikk</button>
-
+                {% endfor %}
+                {% if index ! == 0 %}
+                <li class="tags">{{ value }}</li>
+                <button onclick="sendData('{{ index }}', 'printmeny', 'POST')">klikk</button>
+                {% endfor %}
             </div>
         {% endfor %}
     </div>
